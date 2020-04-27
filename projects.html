@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="google-site-verification" content="5uFYFlmCaMotPqVXKLiYWB_ALAF3nF09Ezgv6v2DElY" />
+	<style type="text/css">
+		/*---------particle.js css--------*/
+		html, body {
+			height: 100%;
+			background-color: black;
+		}
+		body{
+			font:normal 75% Arial, Helvetica;
+		}
+		canvas{
+			display: block;
+			/* vertical-align: bottom; */
+		}
+		/* ---- particles.js container ---- */
+		#particles-js{
+			background-color: black;
+			height: 10%;
+		}
+		#content {
+			height: 90%;
+			background-color: black;
+			color: white
+		}
+		.heading {
+      width:90%;
+      text-align: center;
+      /* background-color:green; */
+      margin-left: auto;
+      margin-right: auto;
+		}
+		.date {
+			font-style: italic;
+      text-align: center;
+      /* background-color:orange; */
+      width:90%;
+			color: grey;
+      margin-left: auto;
+      margin-right: auto;
+		}
+		.paragraph {
+			text-align: justify;
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			color: #AAA;
+      /* background-color:pink; */
+		}
+		.fade_rule {
+        height: 1px;
+        width: 90%;
+        margin: 0 auto;
+        background-image: linear-gradient(top , black 20%, white 50%, black 90%);
+        background-image: -o-linear-gradient(top , black 20%, white 50%, black 90%);
+        background-image: -moz-linear-gradient(top , black 20%, white 50%, black 90%);
+        background-image: -webkit-linear-gradient(top , black 20%, white 50%, black 90%);
+        background-image: -ms-linear-gradient(top , black 20%, white 50%, black 90%);
+        background-image: -webkit-gradient( linear, top, bottom, color-stop(0.2, black), color-stop(0.5, white), color-stop(0.9, black));
+	}
+	.desc {
+		animation: fadeint 1.5s;
+	}
+	#nav {
+		text-decoration: none;
+		color: white;
+	}
+	#nav:hover{
+		color: grey
+	}
+	@keyframes fadeint {
+		from { opacity: 0;
+						transform: translateY(-20px);}
+		to   { opacity: 1;
+						transform: translateY(0px);}
+	}
+
+	</style>
+	<title>Projects | Prakul Sharma</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#000000" />
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="icon" href="web.png" type="image/x-icon">
+	<link rel="canonical" href="https://prakulsharma.github.io/">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="particles-js">
+	</div>
+	<div id="content" class="container-fluid" style="text-align: center; background-color:black;">
+		<div class="row">
+			<div class="desc col-2" style="position:fixed;">
+				<p><a id="nav" style="color:grey; font-size: 14px" href="index.html">Back home</a></p><br><br>
+        <p><a id="nav" href="#storyteller">Smart Storyteller</a></p>
+				<p><a id="nav" href="#research">Research paper</a></p>
+				<p><a id="nav" href="#battery">Battery Buddy</a></p>
+				<p><a id="nav" href="#scholar">Scholar</a></p>
+				<p><a id="nav" href="#street">Ambient Street</a></p>
+
+
+
+			</div>
+
+			<div class="desc col-10" style="margin-left:15%">
+				<!-- Blog Space -->
+				<!-- Put all the blogs here-->
+
+				<!-- Project 1 -->
+	      <h3 id="storyteller" class="heading">Smart Storyteller</h3>
+				<h5 class="date">An image storyteller</h5><br>
+        <img src="storyteller.png" alt="structure of project" width="90%"><br><br>
+	      <div class="paragraph">
+          This project aims to create a deep learning model for the purpose of automatically generating captions for images and thereafter performing storytelling with the help of that caption. The algorithm involved will generate a suitable caption for the image as a one-liner and generate a specific story based on the keywords from the caption as input.<br>
+          Being able to automatically describe the contents of an image after image processing, using properly formed English sentences is rather a very challenging task. Although, it proves to have various viable and effective applications in our day-to-day lives.<br>
+          For instance, visually impaired people can be made to understand what the image is about. Creating news from an image is another application using this principle. Creating stories, poems or plays in the style of someone who’s either no longer alive or wishes to create his/her works in a more timely manner. It can even be used for the purpose of script writing.<br>
+          Hence, this project encompasses the creative method of storytelling by studying an image by detecting and understanding its contents using deep learning and generating human-like stories thus proving it to be a viable approach for various applications.<br>
+          <br>
+          Technology used - Python, Jupyter, Neural networks, Deep Learning, NLP <br>
+          Link - <i>NA</i>
+        </div>
+        <br><br><hr style="width:90%; background-color:white; color:white"><br><br>
+
+        <!-- Project 2 -->
+	      <h3 id="research" class="heading">Fuzzy Clustering based Image Segmentation techniques used to segment MRI / CT scan Brain tissues -	Comparative Analysis</h3>
+				<h5 class="date">International Journal of Imaging Systems and Technology</h5><br>
+        <img src="research.png" alt="image segmentation" width="90%"><br><br>
+	      <div class="paragraph">
+          This research project is a means to devise an algorithm based on Fuzzy c-means clustering that segments an image into different parts on the basis of RGB or grayscale values to be used to analyze and determine tumor cells in the brain using images from MRI/MMR scans.<br>
+          Currently, in order to detect brain tumor there is a higher dependency on the competency of the doctor and there is a probability of human error that could lead to incorrect or delayed diagnosis.<br>
+          Developing a kernel based algorithm enables it to be operable in a high dimensional dataset and makes it computationally cheaper.<br>
+          Thus, this research project utilizes the comparative study of the existing 14 algorithms done in the past and proposes a viable computer aided detection approach to diagnose brain tumor efficiently by eliminating any error or delay caused by human fallibility or any other sources with high success rate.<br>
+          <br>
+          Technology used - MATLAB<br>
+          Link - <i>NA</i>
+        </div>
+        <br><br><hr style="width:90%; background-color:white; color:white"><br><br>
+
+        <!-- Project 3 -->
+	      <h3 id="battery" class="heading">Battery Buddy</h3>
+				<h5 class="date">Android application</h5><br>
+        <img src="battery.png" alt="app screens" width="90%"><br><br>
+	      <div class="paragraph">
+          Battery Buddy is an android application, developed in Java and designed to act as an interface between the users and battery management system which helps the users to view all the types of data like the current battery percentage, current of charge/discharge, net voltage, temperature across seven regions of the BMS etc.<br>
+          In order to set a higher benchmark with respect to the efficiency and performance of application being developed, I implemented Bluetooth low energy (BLE), a technology that is mostly associated with sectors related to smart computing.<br>
+          Furthermore, in order to make the application cover a wide spectrum of usability, various third-party API’s like CSVWriter for data logging, Barcode Scanner for easy connectivity etc. were also implemented.<br>
+          In totality, 44 parameters of the Battery Management System can be viewed and recorded by the user, which not only just provides the user with the data, but also introduces the scope of implementing Machine Learning algorithms to further improvise the whole system.<br>
+          <br>
+          Technology used - Android Studio, Java, Bluetooth Low Energy<br>
+          Link - <a href="https://github.com/prakulsharma/BatteryBuddy">github.com/prakulsharma/BatteryBuddy</a>
+        </div>
+        <br><br><hr style="width:90%; background-color:white; color:white"><br><br>
+
+        <!-- Project 4 -->
+        <h3 id="scholar" class="heading">Scholar</h3>
+        <h5 class="date">PHP website</h5><br>
+        <img src="scholar.png" alt="main webpage" width="90%"><br><br>
+        <div class="paragraph">
+          Scholar is an educational portal built on PHP as its back-end. It is a website where students and learners, in general, can come together to learn, teach, write about, enquire about and share their experiences on a common platform.<br>
+          This website encompasses various elements like blogging, a catalog of courses to choose from, following other members, create questions in the form of a post etc.<br>
+          The main purpose of this project is to create a unified platform that includes all the ways in which knowledge can be shared and spread.<br>
+          <br>
+          Technology used - PHP, HTML5, CSS3, MySQL, Apache<br>
+          Link - <a href="https://github.com/prakulsharma/Scholar">github.com/prakulsharma/Scholar</a>
+        </div>
+        <br><br><hr style="width:90%; background-color:white; color:white"><br><br>
+
+        <!-- Project 5 -->
+        <h3 id="street" class="heading">Ambient Street</h3>
+        <h5 class="date">8051 microcontroller enabled automatic street light</h5><br>
+        <img src="street.png" alt="circuit board" width="90%"><br><br>
+        <div class="paragraph">
+          This project is developed to demonstrate an efficient way of using street lights that results in lesser energy consumption and lower running costs. An 8051  microcontroller is an 8-bit microcontroller. It is built with 40 pins DIP (dual inline package), 4kb of ROM storage and 128 bytes of RAM storage with 2 16-bit timers.<br>
+          These street lights are designed to turn off when a particular level of sunlight is detected by the light sensor or LDR. The simplicity of the circuit creates oppurtunity for this setup to have various other applications as well, for instance, in security and surveillance.<br>
+          <br>
+          Technology used - Embedded-C, AT89C52 microcontroller<br>
+        </div>
+        <!-- <br><br><hr style="width:90%; background-color:white; color:white"><br><br> -->
+
+        <!-- end -->
+
+			</div>
+		</div>
+
+		<br><br><br><br><br>
+		<div class="fade_rule"></div><br>
+		<div style="color:gray; font-size: 14px; paddin-bottom:50px">Prakul Sharma &#9400; 2020</div>
+    <br><br><br>
+
+	</div>
+</body>
+</html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155551148-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155551148-1');
+</script>
+<!-- particle.js -->
+<script type="text/javascript">
+
+	particlesJS("particles-js",{"particles":{"number":{"value":150,"density":{"enable":true,"value_area":1000}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":8}},"opacity":{"value":0.2,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":30,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":/*change this to change modes between bubble, repulse etc*/"repulse"},"onclick":{"enable":/*change to true to add new particles on click*/false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.2}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":150,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+	var count_particles, stats, update;
+	stats = new Stats;
+	stats.setMode(0);
+	stats.domElement.style.position = 'absolute';
+	stats.domElement.style.left = '0px';
+	stats.domElement.style.top = '0px';
+	document.body.appendChild(stats.domElement);
+	count_particles = document.querySelector('.js-count-particles');
+	update = function() {
+		stats.begin();
+		stats.end();
+		if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+			count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+		}
+		requestAnimationFrame(update);
+	};
+	requestAnimationFrame(update);;
+</script>
